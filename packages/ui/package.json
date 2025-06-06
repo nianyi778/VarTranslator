@@ -31,7 +31,7 @@
   "devDependencies": {
     "@extension/tailwindcss-config": "workspace:*",
     "@extension/tsconfig": "workspace:*",
-    "react-spinners": "^0.17.0",
+    "@lidakai/react-spinners": "^0.17.0-beta.19",
     "tsc-alias": "^1.8.16"
   }
 }

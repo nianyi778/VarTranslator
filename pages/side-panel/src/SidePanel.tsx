@@ -25,4 +25,4 @@ const SidePanel = () => {
   );
 };
 
-export default withErrorBoundary(withSuspense(SidePanel, <LoadingSpinner />), ErrorDisplay);
+export default withErrorBoundary(withSuspense(SidePanel, <LoadingSpinner className="min-h-screen" />), ErrorDisplay);

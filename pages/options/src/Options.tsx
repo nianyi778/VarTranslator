@@ -23,4 +23,4 @@ const Options = () => {
   );
 };
 
-export default withErrorBoundary(withSuspense(Options, <LoadingSpinner />), ErrorDisplay);
+export default withErrorBoundary(withSuspense(Options, <LoadingSpinner className="min-h-screen" />), ErrorDisplay);

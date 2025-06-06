@@ -31,7 +31,16 @@ const manifest = {
   version: packageJson.version,
   description: '__MSG_extensionDescription__',
   host_permissions: ['<all_urls>'],
-  permissions: ['storage', 'scripting', 'tabs', 'notifications', 'sidePanel'],
+  permissions: [
+    'storage',
+    'scripting',
+    'tabs',
+    'notifications',
+    'sidePanel',
+    'contextMenus',
+    'activeTab',
+    'clipboardWrite',
+  ],
   options_page: 'options/index.html',
   background: {
     service_worker: 'background.js',

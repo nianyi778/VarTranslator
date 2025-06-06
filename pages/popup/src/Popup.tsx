@@ -60,4 +60,4 @@ const Popup = () => {
   );
 };
 
-export default withErrorBoundary(withSuspense(Popup, <LoadingSpinner />), ErrorDisplay);
+export default withErrorBoundary(withSuspense(Popup, <LoadingSpinner className="min-h-screen" />), ErrorDisplay);

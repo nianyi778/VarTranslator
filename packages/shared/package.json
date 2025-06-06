@@ -23,7 +23,9 @@
     "postinstall": "pnpm ready"
   },
   "dependencies": {
-    "react-error-boundary": "^6.0.0"
+    "react-error-boundary": "^6.0.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/cache": "^11.14.0"
   },
   "devDependencies": {
     "@extension/storage": "workspace:*",

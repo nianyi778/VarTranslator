@@ -42,4 +42,4 @@ const ToggleButton = (props: ComponentPropsWithoutRef<'button'>) => {
   );
 };
 
-export default withErrorBoundary(withSuspense(Panel, <LoadingSpinner />), ErrorDisplay);
+export default withErrorBoundary(withSuspense(Panel, <LoadingSpinner className="min-h-screen" />), ErrorDisplay);

@@ -28,4 +28,4 @@ const NewTab = () => {
   );
 };
 
-export default withErrorBoundary(withSuspense(NewTab, <LoadingSpinner />), ErrorDisplay);
+export default withErrorBoundary(withSuspense(NewTab, <LoadingSpinner className="min-h-screen" />), ErrorDisplay);

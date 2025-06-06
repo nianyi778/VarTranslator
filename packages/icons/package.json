@@ -1,34 +1,38 @@
 {
-  "name": "@extension/content-script",
+  "name": "@extension/icons",
   "version": "0.5.0",
-  "description": "chrome extension - content script",
+  "description": "chrome extension - ui icons components",
   "type": "module",
   "private": true,
   "sideEffects": true,
   "files": [
     "dist/**"
   ],
+  "types": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "clean:bundle": "rimraf dist",
     "clean:node_modules": "pnpx rimraf node_modules",
     "clean:turbo": "rimraf .turbo",
-    "clean": "pnpm clean:bundle && pnpm clean:turbo && pnpm clean:node_modules",
-    "build": "tsx build.mts",
-    "dev": "tsx build.mts",
+    "clean": "pnpm clean:bundle && pnpm clean:node_modules && pnpm clean:turbo",
+    "ready": "tsc -b && tsc-alias -p tsconfig.json",
     "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
     "format": "prettier . --write --ignore-path ../../.prettierignore",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@extension/i18n": "workspace:*",
     "@extension/shared": "workspace:*",
     "@extension/storage": "workspace:*",
-    "@extension/env": "workspace:*",
-    "@extension/content-ui": "workspace:*"
+    "clsx": "^2.1.1",
+    "react-icons": "^5.5.0",
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
-    "@extension/hmr": "workspace:*",
+    "@extension/tailwindcss-config": "workspace:*",
     "@extension/tsconfig": "workspace:*",
-    "@extension/vite-config": "workspace:*"
+    "react-spinners": "^0.17.0",
+    "tsc-alias": "^1.8.16"
   }
 }
