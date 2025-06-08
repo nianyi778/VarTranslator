@@ -60,22 +60,32 @@ const manifest = {
     {
       matches: ['http://*/*', 'https://*/*', '<all_urls>'],
       js: ['content/all.iife.js'],
+      run_at: 'document_idle',
+      all_frames: true,
     },
     {
       matches: ['https://example.com/*'],
       js: ['content/example.iife.js'],
+      run_at: 'document_idle',
+      all_frames: true,
     },
     {
       matches: ['http://*/*', 'https://*/*', '<all_urls>'],
       js: ['content-ui/all.iife.js'],
+      run_at: 'document_idle',
+      all_frames: true,
     },
     {
       matches: ['https://example.com/*'],
       js: ['content-ui/example.iife.js'],
+      run_at: 'document_idle',
+      all_frames: true,
     },
     {
       matches: ['http://*/*', 'https://*/*', '<all_urls>'],
       css: ['content.css'],
+      run_at: 'document_idle',
+      all_frames: true,
     },
   ],
   devtools_page: 'devtools/index.html',
